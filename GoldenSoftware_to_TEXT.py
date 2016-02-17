@@ -5,7 +5,7 @@ filename = input()
 with open(filename, "r") as f:
     sys.stdout = open('%s (converted).txt' % f.name, 'a')
     for line in f:
-        converted_line = line.split()[0:3]  # split each line and remove last 3 column
+        converted_line = line.split()[0:3]  # split each line and remove last 3 columns
         if not converted_line:  # if list/line is empty
             count += 1  # increase count but DO NOT PRINT/ WRITE TO FILE
         else:
